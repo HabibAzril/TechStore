@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="TechStore - Toko elektronik terpercaya untuk laptop gaming, productivity, dan aksesoris berkualitas">
+    <title>TechStore - Toko Elektronik & Laptop Terpercaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- == Header == -->
+    <header class="header">
+        <div class="header-content">
+            <a href="#hero" class="logo">ZenithTech</a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#laptops">Laptops</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                    <li><a href="#footer">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <input type="text" class="search-bar" id="searchBar" placeholder="Cari produk...">
+                <button class="cart-button" id="cartButton">
+                    🛒 Keranjang
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- == Hero Section == -->
+    <section class="hero" id="hero">
+        <h1>Temukan Laptop & Aksesoris Impian Anda WOW</h1>
+        <p>Kualitas terbaik dengan harga terjangkau. Spesifikasi lengkap untuk kebutuhan gaming, kerja, dan kreatif
+            Anda.</p>
+        <button class="cta-button" onclick="document.getElementById('laptops').scrollIntoView({behavior: 'smooth'})">
+            Lihat Produk
+        </button>
+    </section>
+
+    <!-- == Pilihan Leptop == -->
+    <section class="container" id="laptops">
+        <h2 class="section-title">Laptop</h2>
+        <p class="section-subtitle">Laptop pilihan dengan spesifikasi lengkap untuk berbagai kebutuhan</p>
+        <div class="product-grid" id="laptopGrid">
+
+        </div>
+    </section>
+
+    <!-- == pilihan Aksesoris & Kelengkapan == -->
+    <section class="container" id="accessories">
+        <h2 class="section-title">Aksesoris & Kelengkapan Laptop</h2>
+        <p class="section-subtitle">Lengkapi kebutuhan laptop Anda dengan aksesoris berkualitas</p>
+        <div class="product-grid" id="accessoriesGrid">
+
+        </div>
+    </section>
+
+    <!-- == Keranjang == -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>🛒 Keranjang Belanja</h2>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-cart-icon">🛒</div>
+                <p>Keranjang belanja Anda kosong</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">Rp 0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout Sekarang
+            </button>
+        </div>
+    </aside>
+
+    <!-- == Popup Terima Kasih == -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <div class="popup-icon">✅</div>
+            <h2>Terima Kasih!</h2>
+            <p>Pesanan Anda telah berhasil</p>
+            <button class="popup-close-btn" id="popupCloseBtn">OK</button>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ZenithTech</h3>
+                Informasi Lain Bisa Cek Di bawah
+            </div>
+
+            <div class="footer-section">
+                <h3>Hubungi Kami</h3>
+                <p>Email:</p>
+                <p>WhatsApp: </p>
+                <p>Telepon: </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <a href="https://www.instagram.com/zzzri__l/">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="https://www.youtube.com/@azrilrayyanp">YouTube</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZenithTech. Made with some cool Tech</p>
+        </div>
+    </footer>
+
+    <!-- == JavaScript == -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
